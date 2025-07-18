@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agência Criativa - Landing Page</title>
+    <script defer>
+        function toggleModal() {
+            const modal = document.getElementById("modal");
+            modal.classList.toggle("hidden");
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- HEADER -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-600">Agência Criativa</h1>
+            <nav class="space-x-6 hidden md:flex">
+                <a href="#servicos" class="hover:text-indigo-600">Serviços</a>
+                <a href="#projetos" class="hover:text-indigo-600">Portfólio</a>
+                <button onclick="toggleModal()"
+                    class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">Orçamento</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="bg-indigo-600 text-white py-20 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-4">Seu negócio online com design profissional</h2>
+            <p class="text-lg mb-6">Sites rápidos, responsivos e feitos para gerar resultados.</p>
+            <button onclick="toggleModal()"
+                class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition">Solicitar
+                Orçamento</button>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS (com ícones representativos) -->
+    <section id="servicos" class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold mb-12">O que oferecemos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 rounded shadow hover:shadow-lg transition">
+                    <img src="https://img.icons8.com/ios-filled/100/4f46e5/monitor.png" alt="Landing Page"
+                        class="mx-auto mb-4 w-16 h-16">
+                    <h4 class="text-xl font-semibold mb-2">Landing Pages</h4>
+                    <p>Projetos rápidos e impactantes para captação de leads e vendas.</p>
+                </div>
+                <div class="p-6 rounded shadow hover:shadow-lg transition">
+                    <img src="https://img.icons8.com/ios-filled/100/4f46e5/domain.png" alt="Site institucional"
+                        class="mx-auto mb-4 w-16 h-16">
+                    <h4 class="text-xl font-semibold mb-2">Sites Institucionais</h4>
+                    <p>Mostre sua empresa com um site profissional e responsivo.</p>
+                </div>
+                <div class="p-6 rounded shadow hover:shadow-lg transition">
+                    <img src="https://img.icons8.com/ios-filled/100/4f46e5/shopping-cart.png" alt="Ecommerce"
+                        class="mx-auto mb-4 w-16 h-16">
+                    <h4 class="text-xl font-semibold mb-2">Lojas Virtuais</h4>
+                    <p>E-commerces simples e funcionais prontos para vender.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFÓLIO (com imagens reais e estáveis do Unsplash) -->
+    <section id="projetos" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold mb-12">Alguns de nossos projetos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Projeto 1 -->
+                <div class="rounded shadow overflow-hidden hover:shadow-lg transition">
+                    <img src="https://webgenium.com.br/wp-content/uploads/2022/08/site-institucional.jpg"
+                        alt="Site Institucional" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold">Site Institucional</h4>
+                        <p class="text-sm text-gray-600">Design profissional para clínicas e empresas.</p>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="rounded shadow overflow-hidden hover:shadow-lg transition">
+                    <img src="https://venngage-wordpress-pt.s3.amazonaws.com/uploads/2020/03/loja-virtual-1.png"
+                        alt="Loja Virtual" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold">Loja Virtual</h4>
+                        <p class="text-sm text-gray-600">E-commerce simples e funcional com checkout.</p>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="rounded shadow overflow-hidden hover:shadow-lg transition">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80"
+                        alt="Landing Page" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold">Landing Page</h4>
+                        <p class="text-sm text-gray-600">Captação de leads com foco em tráfego pago.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CHAMADA FINAL -->
+    <section class="py-16 text-center">
+        <div class="container mx-auto px-6">
+            <h3 class="text-2xl font-semibold mb-4">Vamos colocar sua ideia no ar?</h3>
+            <p class="mb-6">Clique no botão abaixo e fale com a gente. Retornamos rápido!</p>
+            <button onclick="toggleModal()"
+                class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700 transition">Solicitar
+                Orçamento</button>
+        </div>
+    </section>
+
+    <!-- Botão para abrir o modal -->
+    <button onclick="toggleModal()" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+        Solicitar Orçamento
+    </button>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-lg relative">
+
+            <button onclick="toggleModal()"
+                class="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-xl">&times;</button>
+
+            <h3 class="text-2xl font-bold mb-4 text-center">Solicite um orçamento gratuito</h3>
+            <p class="text-gray-600 mb-6 text-center">Preencha o formulário abaixo e retornaremos o mais breve possível.
+            </p>
+            <form action="https://formspree.io/f/xblybgyg" method="POST" class="grid gap-4">
+                <input type="text" name="nome" placeholder="Seu nome" required class="border rounded px-4 py-2 w-full">
+                <input type="email" name="email" placeholder="Seu e-mail" required
+                    class="border rounded px-4 py-2 w-full">
+                <textarea name="mensagem" placeholder="Fale um pouco sobre o projeto..." required
+                    class="border rounded px-4 py-2 w-full h-28"></textarea>
+
+                <input type="text" name="_gotcha" style="display:none">
+                <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.toggle('hidden');
+        }
+    </script>
+
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>&copy; 2025 Agência Criativa. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
